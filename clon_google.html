@@ -4,23 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Google</title>
 	<style>
-	div {
+	body{
+		font-family: sans-serif;
+		height: 100%
+	}
+	#header {
 		text-align: right;
 		color: blue;
 	}
 	span{
 		padding-right: 10px;
-		padding-top: 10px;
+		padding-top: 20px;
 	}
-	section img {
+	img {
 		width: 350px;
+	}
+	#wrapper{
+		min-height: 100%;
+    	position: relative;
 	}
 	#one {
 		height: 150px;
 	}
 	#three{
 		width: 100%;
-
 	}
 	input{
 		width: 550px;
@@ -28,25 +35,65 @@
 		margin-bottom: 20px;
 	}
 	#four {
-		padding: 55px;
+	padding: 55px;
+	}
+
+	#footer {
+		height: 35px;
+		background: #E8E7E7;
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+	}
+	#derecha{
+		float: right;
+		padding: 10px;
+	}
+	#izquierda{
+		float: left;
+		padding: 10px;
+	}
+	a {
+		color: #646464;
 	}
 	</style>
 </head>
 <body>
-<div> 
-	<span> Katherine </span> 
-	<span> Gmail </span>
-	<span> Imágenes </span>
-</div>
-<section id="one"></section>
-<section id="two"> <center><img src="http://viveteotihuacan.com.mx/img/logo_google.png"></center></section>
-<section id="three"><center><input></center></section>
-<section class="botones">
-	<center>
-<button>Buscar en Google</button>
-<button>Me siento con suerte</button>
-	</center>
-</section>
-<section id="four"> <center> Google.com.mx ofrecido en: <a href="https://www.google.com.mx/setprefs?sig=0_UCBbBGH3c-qSE9Rrafyk5qaK_20%3D&hl=es-419&source=homepage">Español (Latinoamérica)</a></center></section>
+	<div id="wrapper">
+		<div id="header"> 
+			<span> Katherine </span> 
+			<span> Gmail </span>
+			<span> Imágenes </span>
+		</div>
+		<div id="one">
+		</div>
+		<div id="two"> 
+			<center><img src="http://viveteotihuacan.com.mx/img/logo_google.png"></center>
+		</div>
+		<div id="three">
+			<center><input></center>
+		</div>
+		<div class="botones">
+			<center>
+				<button>Buscar en Google</button>
+				<button>Me siento con suerte</button>
+			</center>
+		</div>
+		<div id="four"> 
+			<center> Google.com.mx ofrecido en: <a href="https://www.google.com.mx/setprefs?sig=0_UCBbBGH3c-qSE9Rrafyk5qaK_20%3D&hl=es-419&source=homepage">Español (Latinoamérica)</a></center>
+		</div>
+	</div>
+	<div id="footer">
+			<span id="derecha">
+				<a href="https://www.google.com.mx/intl/es/policies/privacy/?fg=1">Privacidad</a>
+				<a href="https://www.google.com.mx/intl/es/policies/terms/?fg=1">Condiciones</a>
+				<a href="https://www.google.com.mx/preferences?hl=es">Preferencias</a>
+			</span>
+			<span id="izquierda">
+				<a href="https://www.google.com.mx/intl/es/ads/?fg=1">Publicidades</a>
+				<a href="https://www.google.com.mx/services/?fg=1">Negocios</a>
+				<a href="https://www.google.com.mx/intl/es/about.html?fg=1">Acerca de</a>
+			</span>
+	</div>
 </body>
 </html>
